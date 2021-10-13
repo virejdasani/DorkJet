@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" href="assets/icon.png" />
+
+  <link rel="stylesheet" href="style.css">
+
+  <title>DorkJet</title>
+</head>
+
+<body>
+  <div class="main">
+
+    <!-- ----------------------------------------------------------------------- -->
+    <!--                                Section 1                                -->
+    <!-- ----------------------------------------------------------------------- -->
+    <div id="section-1" class="section-alignment">
+
+      <!-- Top content -->
+      <h2 id="landing-header">DorkJet</h2>
+      <div class="padding-semi-large"></div>
+
+      <div class="padding"></div>
+
+      <div class="inline">
+        <p>Exact Search Term</p>
+        <textarea type="text" id="exact" rows="1" placeholder="Your Search Keyword(s)"></textarea>
+      </div>
+      <div class="inline">
+        <p>Search Body Text For keyword(s)</p>
+        <textarea type="text" id="intext" rows="1" placeholder="Your Search Keyword(s)"></textarea>
+      </div>
+      <div class="inline">
+        <p>Filetype</p>
+        <textarea type="text" id="filetype" rows="1" placeholder="pdf, png, mp4, etc."></textarea>
+      </div>
+      <div class="inline">
+        <p>Website</p>
+        <textarea type="text" id="website" rows="1" placeholder="https://website.com"></textarea>
+      </div>
+      <div class="inline">
+        <p>Website 2</p>
+        <textarea type="text" id="website2" rows="1" placeholder="https://website.com"></textarea>
+      </div>
+
+      <div class="padding-semi-large"></div>
+
+      <div id="app-store-buttons">
+        <button id="generateButton" class="button-standard">Generate Query</button>
+        <p>|</p>
+        <button id="searchButton" class="button-standard">Google Search</button>
+      </div>
+
+      <div id="generatedAnswer"></div>
+
+      <!-- <div id="app-store-buttons">
+        <button id="speakTextButton" class="button-standard" onclick="addAnd()">AND</button>
+        <p>|</p>
+        <button id="pauseButton" class="button-standard" onclick="addOR()">OR</button>
+        <p>|</p>
+        <button id="pauseButton" class="button-standard" onclick="addOpenBracket()">(</button>
+        <p>|</p>
+        <button id="pauseButton" class="button-standard" onclick="addCloseBracket()">)</button>
+      </div> -->
+
+      <div id="indicators">
+
+        <div id="repo-links">
+          <a class="indicator" href="https://virejdasani.github.io" target="_blank">Developed by Virej Dasani</a>
+
+          <p class="indicator indicator-separator">•</p>
+
+          <a class="indicator" href="https://github.com/virejdasani/OfflinetextToSpeech" target="_blank">GitHub</a>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+  <script src="index.js"></script>
+</body>
+
+</html>
